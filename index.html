@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Allam - Flutter Developer Portfolio</title>
+    <meta name="description"
+        content="Flutter Developer with 2+ years of experience delivering high-performance, cross-platform apps for Android and Windows.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+
+<body class="dark-theme">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-text">Muhammad Allam</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Crafting Beautiful <span class="highlight">Cross-Platform</span> Experiences
+                    </h1>
+                    <p class="hero-subtitle">Flutter Developer | Innovator | Problem Solver</p>
+                    <p class="hero-description">
+                        With over two years of experience in building seamless applications, I specialize in creating
+                        high-performance Flutter apps that engage users and drive results.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                            Let's Collaborate
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline" onclick="downloadCV()">
+                            Download CV
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7,10 12,15 17,10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/MuhammadAllam" target="_blank" rel="noopener noreferrer"
+                            class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/mohamed-allam-dev" target="_blank" rel="noopener noreferrer"
+                            class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="mailto:mohamedallamma1999@gmail.com" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="scroll-down" onclick="scrollToSection('about')" aria-label="Scroll to about section">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="6,9 12,15 18,9" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Flutter Developer with 2+ years of experience delivering high-performance, cross-platform
+                            apps for
+                            Android and Windows. Skilled in Dart, Flutter, MVVM, BLoC, and SOLID principles, with a
+                            strong
+                            focus on clean, maintainable code.
+                        </p>
+                        <p>
+                            Successfully built and deployed POS systems, inventory management tools, and mobile apps
+                            that improved
+                            client efficiency. Adept at API integration, offline-first architectures, and multilingual
+                            support to
+                            ensure excellent user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Flutter Developer (Freelance)</h3>
+                        <span class="experience-period">April 2023 - Present</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Designed and developed cross-platform mobile and desktop apps for real clients, including
+                            POS systems, inventory tools, and utility apps.</li>
+                        <li>Delivered 3+ client projects from concept to production, meeting 100% of deadlines.</li>
+                        <li>Provided long-term maintenance, bug fixes, and feature enhancements for deployed
+                            applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" style="grid-column: 1 / -1;">
+                        <div class="project-header">
+                            <h3 class="project-title">Foody (Production Project)</h3>
+                            <a href="https://drive.google.com/file/d/1dogChq1SiIUYiuC_wLM_TPF6-aPhOgal/view?usp=drive_link"
+                                target="_blank"
+                                style="position: absolute; top: 0; right: 0; z-index: 1; height: 2.5rem; margin-top: auto; padding: 1rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V13" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description">
+                            Developed a cross-platform cashier system (Android & Windows) using MVVM and BLoC (Cubit),
+                            serving over +20 restaurants until now.
+                        </p>
+                        <ul class="project-features">
+                            <li>Implemented offline-first syncing between Isar (local) and Supabase (cloud)</li>
+                            <li>Enhanced user experience with multilingual support and dynamic theming</li>
+                            <li>Generated 10+ automated sales, expense, and stock reports</li>
+                            <li>Integrated USB/LAN thermal printing for receipts and kitchen orders</li>
+                            <li>Created 4 dedicated companion apps that integrate with the main cashier system</li>
+                        </ul>
+                    </div>
+                    <div class="project-card" style="grid-column: 1 / -1;">
+                        <div class="project-header">
+                            <h3 class="project-title">Optics Store (Production Project)</h3>
+                            <a href="https://drive.google.com/file/d/11BzVbuhZtgkNfEOOvE1VK4u2xafSenmG/view?usp=drive_link"
+                                target="_blank"
+                                style="position: absolute; top: 0; right: 0; z-index: 1; height: 2.5rem; margin-top: auto; padding: 1rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V13" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description">
+                            Built an inventory and sales management system for optics retailers using MVC and GetX.
+                        </p>
+                        <ul class="project-features">
+                            <li>Implemented role-based access and multilingual support</li>
+                            <li>Enabled sales discounts, expense tracking, and supplier management</li>
+                            <li>Provided multiple detailed reports for sales, stock levels, and expenses</li>
+                        </ul>
+                    </div>
+                    <div class="project-card" style="grid-column: 1 / -1;">
+                        <div class="project-header">
+                            <h3 class="project-title">Azkar App (Android Native)</h3>
+                            <a href="https://drive.google.com/file/d/1__D7vK8y27UDIVm3_2EPt80qT1Aw1lry/view?usp=drive_link"
+                                target="_blank"
+                                style="position: absolute; top: 0; right: 0; z-index: 1; height: 2.5rem; margin-top: auto; padding: 1rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V13" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="project-description">
+                            Islamic app with comprehensive features for daily prayers and spiritual practices.
+                        </p>
+                        <ul class="project-features">
+                            <li>Included prayer times with live countdowns and built-in Qibla compass</li>
+                            <li>Embedded PDFs of the Holy Qur'an for offline access</li>
+                            <li>Added digital Tasbeeh, morning and evening Adhkar, and the 99 Names of Allah</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Programming & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">Dart</span>
+                            <span class="skill-tag">MVC</span>
+                            <span class="skill-tag">MVVM</span>
+                            <span class="skill-tag">BLoC</span>
+                            <span class="skill-tag">GetX</span>
+                            <span class="skill-tag">SOLID Principles</span>
+                            <span class="skill-tag">Clean Code</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Databases & Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Supabase</span>
+                            <span class="skill-tag">Appwrite</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">Hive</span>
+                            <span class="skill-tag">Isar</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">WebSockets</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Development Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">App Signing</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Android Studio</span>
+                            <span class="skill-tag">Code Obfuscation</span>
+                            <span class="skill-tag">Responsive UI Design</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Cross-Platform Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Android</span>
+                            <span class="skill-tag">iOS</span>
+                            <span class="skill-tag">MacOS</span>
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-description">
+                    Ready to bring your ideas to life? Let's discuss your next project and create something amazing
+                    together.
+                </p>
+                <div class="contact-grid">
+                    <button class="contact-item" onclick="copyToClipboard('mohamedallamma1999@gmail.com', 'Email')">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>mohamedallamma1999@gmail.com</p>
+                        </div>
+                    </button>
+                    <button class="contact-item" onclick="copyToClipboard('+20 1028464487', 'Phone')">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Phone</h3>
+                            <p>+20 1028464487</p>
+                        </div>
+                    </button>
+                    <a href="https://linkedin.com/in/mohamed-allam-dev" target="_blank" rel="noopener noreferrer"
+                        class="contact-item contact-link">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>https://linkedin.com/in/mohamed-allam-dev</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/MuhammadAllam" target="_blank" rel="noopener noreferrer"
+                        class="contact-item contact-link">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>https://github.com/MuhammadAllam</p>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Location</h3>
+                            <p>Gharbia, Egypt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Muhammad Allam. All rights reserved.</p>
+                <p>Built with passion for creating exceptional digital experiences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
